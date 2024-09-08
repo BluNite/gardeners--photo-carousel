@@ -7,46 +7,41 @@
     <title>Garden Picture Carousel</title>
     <!--icon-->
     <link rel="icon" href="assets/images/carousel_icon_free.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <!--body-->
   <body>
     <!--section-->
     <section aria-label="Latest Photos">
       <!--div-->
-      <div class="carousel">
+      <div class="carousel_box">
         <!--buttons-->
-        <button class="prev_btn">&#x27F8;</button>
-        <button class="next_btn">&#x27F9;</button>
+        <button class="prev_btn carousel_btn" data-carousel-buttons>
+          &#x27F8;
+        </button>
+        <button class="next_btn carousel_btn" data-carousel-buttons>
+          &#x27F9;
+        </button>
         <!--list-->
         <ul>
           <!--list element and image-->
-          <li class="slide">
-            <img
-              style="width: 350px; height: 350px"
-              src="assets/images/blue_hydrenga.jpg"
-              alt="blue hydrangea"
-            />
+          <li class="slide" data-active>
+            <img src="assets/images/blue_hydrenga.jpg" alt="blue hydrangea" />
           </li>
           <!--list element and image-->
           <li class="slide">
             <img
-              style="width: 350px; height: 350px"
               src="assets/images/calla_lilli.jpg"
               alt="calla lilly red and yellow"
             />
           </li>
           <!--list element and image-->
           <li class="slide">
-            <img
-              style="width: 350px; height: 350px"
-              src="assets/images/dhalia.jpg"
-              alt="dahlia purple"
-            />
+            <img src="assets/images/dhalia.jpg" alt="dahlia purple" />
           </li>
           <!--list element and image-->
           <li class="slide">
             <img
-              style="width: 350px; height: 350px"
               src="assets/images/peach_lilly.jpg"
               alt="peach colored lilly"
             />
@@ -54,5 +49,6 @@
         </ul>
       </div>
     </section>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
