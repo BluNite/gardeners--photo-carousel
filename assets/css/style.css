@@ -1,4 +1,5 @@
 /*Universal Selector*/
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -17,23 +18,28 @@ body {
 }
 
 .carousel_box > ul {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.slide > img {
+  height: 100vh;
+
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+}
+
 .slide {
+  flex-direction: column;
+  text-align: center;
   position: absolute;
   inset: 0;
   opacity: 0;
 }
 
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 .slide[data-active] {
   opacity: 1;
 }
